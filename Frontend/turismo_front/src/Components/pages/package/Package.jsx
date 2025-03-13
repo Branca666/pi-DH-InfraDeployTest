@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getOnepackage } from '../../services/getOnePackage';
 import { data } from 'react-router-dom';
-import styles from "./Package.module.css";
+import styles from "./package.module.css";
 import { Link } from 'react-router-dom';
 import Gallery from '../../gallery/Gallery';
 import flecha_atras from '../../../assets/flecha_atras.png'

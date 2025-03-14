@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./CategoryRegistry.module.css";
 import { FaPlusCircle, FaList } from "react-icons/fa";
-import addCategory from "../../services/AddCategory";
+import addCategory from "../../services/addCategory";
 import getAllPackages from "../../services/getAllPackages";
 
 const adminOptions = [

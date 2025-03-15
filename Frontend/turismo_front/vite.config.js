@@ -13,4 +13,13 @@ export default defineConfig({
     }
   },
   assetsInclude: ['**/*.png', '**/*.jpg', '**/*.svg'],
+  server: {
+    host: '0.0.0.0',
+    port: process.env.PORT || 3000,
+    strictPort: true,
+    cors: true,
+    preview: {
+      allowedHosts: ['pi-dh-infradeploytest-production.up.railway.app'],
+    },
+  },
 })

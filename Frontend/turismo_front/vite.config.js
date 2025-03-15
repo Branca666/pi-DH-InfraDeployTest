@@ -15,11 +15,16 @@ export default defineConfig({
   assetsInclude: ['**/*.png', '**/*.jpg', '**/*.svg'],
   server: {
     host: '0.0.0.0',
-    port: process.env.PORT || 3000,
+    port: 3000, // Railway maneja el puerto automáticamente
     strictPort: true,
     cors: true,
-    preview: {
-      allowedHosts: ['pi-dh-infradeploytest-production.up.railway.app'],
-    },
+    origin: 'https://pi-dh-infradeploytest-production.up.railway.app', // 🔥 Agregamos esto
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: 3000,
+    strictPort: true,
+    cors: true,
+    allowedHosts: ['pi-dh-infradeploytest-production.up.railway.app'],
   },
 })
